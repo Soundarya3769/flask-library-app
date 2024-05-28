@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
@@ -255,15 +254,5 @@ def import_book(id):
 
 
 if __name__ == '__main__':
-    # try:
-    #     new_book =Books(book_id=1,title="book_title",authors="book_author",stockQty=0,timesIssued=0)
-    #     db.session.add(new_book)
-    #     db.session.commit()
-    #     new_customer =Customer(cust_id=1,name="name")
-    #     db.session.add(new_customer)
-    #     db.session.commit()
-    # except:
-    #     pass
-    
     app.run(host='0.0.0.0',port=8080,debug=True)
-    
+
